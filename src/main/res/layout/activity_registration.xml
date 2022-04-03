@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:background="@drawable/welcome5">
+
+    <!--Name field-->
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/white"
+        android:hint="@string/fname"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:background="@drawable/rounded_text_fields">
+    </EditText>
+
+    <!--LastName-->
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstname"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/lname"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:padding="20dp"
+        android:inputType="text"
+        android:background="@drawable/rounded_text_fields" />
+
+
+
+    <!--UserName field-->
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="@string/lname"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:padding="20dp"
+        android:background="@drawable/rounded_text_fields"
+        android:inputType="text"/>
+
+
+
+
+
+    <!--pasword field-->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_text_fields"
+        android:password="true"
+        android:hint="@string/password"
+        android:layout_below="@id/userName"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <!--Radio Buttons-->
+    <RadioButton
+        android:id="@+id/student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/Std"
+        android:textColor="@color/white">
+    </RadioButton>
+
+
+    <RadioButton
+        android:id="@+id/lecturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/Lec"
+        android:textColor="@color/white">
+    </RadioButton>
+
+
+
+    <!--Button for Registering-->
+    <Button
+        android:id="@+id/registration_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/register">
+
+    </Button>
+
+
+
+</RelativeLayout>
